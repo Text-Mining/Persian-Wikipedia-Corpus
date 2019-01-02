@@ -14,12 +14,12 @@ Each line (article/record) has 12 fields :
 6. "RedirectList": list of articles that redirect to current page (article)
 7. "IsDisambiguationPage": indicate the article is disambiguation page
 8. "TargetLinksCount": number of articles that linked to the current page (article)
-9. "InfoBox": wikipedia information box of the article
-   9.1. "Title": the infobox title e.g., "Title":"شاعر و نویسنده"
+9. "InfoBox": wikipedia information box of the article  
+   9.1. "Title": the infobox title e.g., "Title":"شاعر و نویسنده"  
    9.2. "KeysAndValues": list of (key,value) pairs of infobox table e.g., "KeysAndValues":[{"Item1":"نام","Item2":"سعدی شیرازی"},{"Item1":"تصویر","Item2":"Sadi in a Rose garden.jpg"}, ...]
-10. "Text": the normailzed plain text of the article
-11. "Links": list of internal links of current article 
-12. "Parents": list of wikipedia category link for current article
+10. "Text": the [normailzed](https://api.text-mining.ir/swagger/index.html) plain text of the current article
+11. "Links": list of internal links of the current article 
+12. "Parents": list of wikipedia category link for the current article
 
 ## Sample Line
 ```json
