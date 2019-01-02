@@ -1,6 +1,6 @@
 # Persian-Wikipedia-Corpus
-Parsing the Persian wikipedia's markup language into JSON and the most modern deep learning models built on it.
-A complete copy of Persian Wikimedia pages, in the form of plain text (without wikitext markup) and metadata embedded in JSON.
+Parsing the Persian wikipedia's markup language into JSON and the most modern deep learning models built on it.  
+A complete copy of Persian Wikimedia pages, in the form of plain text (without wikitext markup) and metadata embedded in JSON.  
 The current version is as [fawiki-20181001-dump](https://dumps.wikimedia.org/fawiki/20181001) that it contains 1,160,676 useful articles.
 
 ## Data Format
@@ -10,16 +10,16 @@ Each line (article/record) has 12 fields :
 2. "Title": the article (page) title
 3. "Type": the entity type (int) => {0:Unknown, 1:Person, 2:Location, 3:Organization, 4:Event, 6:Other(e.g., film,music,book,...)}
 4. "Rank": the importance rank (int)
-5. "Namespace": the wikipedia namespace
-6. "RedirectList": the list of articles that redirect to current article
+5. "Namespace": [the wikipedia namespace](https://en.wikipedia.org/wiki/Wikipedia:Namespace)
+6. "RedirectList": list of articles that redirect to current page (article)
 7. "IsDisambiguationPage": indicate the article is disambiguation page
-8. "TargetLinksCount": number of articles that link to current article
+8. "TargetLinksCount": number of articles that linked to the current page (article)
 9. "InfoBox": wikipedia information box of the article
    9.1. "Title": the infobox title e.g., "Title":"شاعر و نویسنده"
-   9.2. "KeysAndValues": the list of pair (key,value) of infobox table e.g., "KeysAndValues":[{"Item1":"نام","Item2":"سعدی شیرازی"},{"Item1":"تصویر","Item2":"Sadi in a Rose garden.jpg"}, ...]
-10. "Text": the plain text of the article
-11. "Links": the list of internal links of current article 
-12. "Parents": the list of wikipedia category link for current article
+   9.2. "KeysAndValues": list of (key,value) pairs of infobox table e.g., "KeysAndValues":[{"Item1":"نام","Item2":"سعدی شیرازی"},{"Item1":"تصویر","Item2":"Sadi in a Rose garden.jpg"}, ...]
+10. "Text": the normailzed plain text of the article
+11. "Links": list of internal links of current article 
+12. "Parents": list of wikipedia category link for current article
 
 ## Sample Line
 ```json
